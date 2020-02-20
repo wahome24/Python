@@ -1,0 +1,15 @@
+#created a simple class in python.
+
+class Book():
+
+  def __init__(self,title,author,pages):
+
+    self.title = title
+    self.author = author
+    self.pages = pages
+
+#I am now able to easily generate an object from the class created.
+
+my_book = Book('Born a crime','Trevor Noah',350)
+
+print(f'I am currently reading {my_book.title} by {my_book.author}!')
