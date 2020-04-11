@@ -1,0 +1,41 @@
+#The below code check if the name inputted by the user is present in a list.
+
+#If present the program welcomes the user with the name provided and contained in the list.
+
+#If not present, the user is prompted if to add the name or not.
+
+#If they say yes, the name is added to the list and they can proceed to login.
+
+#Existing List at the beginning of the program.
+
+result= ['Erastus','wahome','Gacheru']
+
+#Prompt the user to enter their name.
+
+user = input('Enter your name: ')
+
+#A while loop to ensure a user can try as many times as possible. 
+while user != 'end':
+
+#check if user is present in the list
+  if user in result:
+    print(f'welcome {user}')
+
+  else:
+    print('That name does not exist.')
+
+ #code to add user if they do not exist in the list 
+  if user not in result:
+    test = input('Do you want to add name? yes/no: ')
+
+    if test == 'yes':
+
+      result.append(user)
+      print('Your name has been added. Enter name to login')
+
+    else:
+      print('Enter end to finish')
+
+
+
+  user = input('Enter your name: ')
